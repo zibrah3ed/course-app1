@@ -10,6 +10,7 @@ namespace App1
 {
     class BL_PageContent
     {
+        //Comment
         // Output String for class names Public
         public static string VarOutput { get; set; }
 
