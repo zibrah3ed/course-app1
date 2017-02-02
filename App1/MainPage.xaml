@@ -19,7 +19,11 @@
         <Button x:Name="btnCourse1" Content="Course 1" HorizontalAlignment="Left" Margin="46,350,0,0" VerticalAlignment="Top" Click="btnCourse1_Click"/>
         <Button x:Name="btnCourse2" Content="Course 2" HorizontalAlignment="Left" Margin="46,387,0,0" VerticalAlignment="Top" Click="btnCourse2_Click"/>
         <Button x:Name="btnCourse3" Content="Course 3" HorizontalAlignment="Left" Margin="46,424,0,0" VerticalAlignment="Top" Click="btnCourse3_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="49,310,0,0" TextWrapping="Wrap" Text="Course Listing :" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Left" Margin="46,500,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="46,310,0,0" TextWrapping="Wrap" Text="Course Listing :" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="46,600,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" IsReadOnly="True"/>
+        
 
     </Grid>
 </Page>

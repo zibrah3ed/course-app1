@@ -31,6 +31,8 @@ namespace App1
             this.InitializeComponent();
             txtBoxRas.Text = "Rasmussen College";
             txtBoxRas.FontSize = 14;
+            BL_PageContent.CreatedBy = "Created By: Tyson Funk";
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
 
         }
 
@@ -90,6 +92,9 @@ namespace App1
             this.Frame.Navigate(typeof(CoursePageThree));
         }
 
-        
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Faculty));
+        }
     }
 }

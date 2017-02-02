@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Tfunk_Course_Project_App
+namespace App1
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -25,6 +25,9 @@ namespace Tfunk_Course_Project_App
         public Faculty()
         {
             this.InitializeComponent();
+            BL_PageContent.CreatedBy = "Created By: Tyson Funk";
+
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
         }
 
         private void hypLnkPage2_Click(object sender, RoutedEventArgs e)
