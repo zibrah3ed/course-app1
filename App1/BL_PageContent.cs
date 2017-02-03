@@ -41,6 +41,8 @@ namespace App1
             VarOutput = string.Empty;
             CreditOutput = string.Empty;
             PrereqOutput = string.Empty;
+
+            // Call function to set preeqs and credits
             CourseCredits(0);
 
             // Iterate through string names and append content with a space

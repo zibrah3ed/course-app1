@@ -23,16 +23,15 @@ namespace App1
     public sealed partial class CoursePageOne : Page
     {
 
-        public static string courseTxt { get; set; }
-        public static string prereqTxt { get; set; }
-        public static string creditsTxt { get; set; }
-
         public CoursePageOne()
         {
             this.InitializeComponent();
-            txtBoxCourseOne.Text = courseTxt;
-            txtBoxCreditsOne.Text = creditsTxt;
-            txtBoxPrereqOne.Text = prereqTxt;
+            // call course one function to set variables within bl_pagecontent
+            BL_PageContent.course1();
+            // Set textbox variables to bl_pagecontent public variables
+            txtBoxCourseOne.Text = BL_PageContent.VarOutput;
+            txtBoxCreditsOne.Text = BL_PageContent.CreditOutput;
+            txtBoxPrereqOne.Text = BL_PageContent.PrereqOutput;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

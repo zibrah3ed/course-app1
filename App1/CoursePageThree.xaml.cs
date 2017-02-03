@@ -22,16 +22,18 @@ namespace App1
     /// </summary>
     public sealed partial class CoursePageThree : Page
     {
-        public static string courseTxt { get; set; }
-        public static string prereqTxt { get; set; }
-        public static string creditsTxt { get; set; }
 
         public CoursePageThree()
         {
             this.InitializeComponent();
-            txtBoxCourse3.Text = courseTxt;
-            txtBoxPrereq3.Text = prereqTxt;
-            txtBoxCredits3.Text = creditsTxt;
+            
+            // call course one function to set variables within bl_pagecontent
+            BL_PageContent.course3();
+            
+            // Set textbox variables to bl_pagecontent public variables
+            txtBoxCourse3.Text = BL_PageContent.VarOutput;
+            txtBoxCredits3.Text = BL_PageContent.CreditOutput;
+            txtBoxPrereq3.Text = BL_PageContent.PrereqOutput;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

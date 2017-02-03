@@ -50,45 +50,18 @@ namespace App1
 
         private void btnCourse1_Click(object sender, RoutedEventArgs e)
         {
-
- 
-            BL_PageContent.course1();
-            // Assign button text to textbox
-            CoursePageOne.courseTxt = BL_PageContent.VarOutput;
-            CoursePageOne.prereqTxt = BL_PageContent.PrereqOutput;
-            CoursePageOne.creditsTxt = BL_PageContent.CreditOutput;
-    
             //navigate to course page one
             this.Frame.Navigate(typeof(CoursePageOne));
-            // Popup dialog code, must add async to function call
-            // var dialog = new MessageDialog(VarOutput);
-            // await dialog.ShowAsync();
         }
 
 
         private void btnCourse2_Click(object sender, RoutedEventArgs e)
         {
-
-            BL_PageContent.course2();
-            // Assign button text to textbox
-            CoursePageTwo.courseTxt = BL_PageContent.VarOutput;
-            CoursePageTwo.prereqTxt = BL_PageContent.PrereqOutput;
-            CoursePageTwo.creditsTxt = BL_PageContent.CreditOutput;
-
-            //navigate to course page one
             this.Frame.Navigate(typeof(CoursePageTwo));
         }
 
         private void btnCourse3_Click(object sender, RoutedEventArgs e)
         {
-
-            BL_PageContent.course3();
-            // Assign button text to textbox
-            CoursePageThree.courseTxt = BL_PageContent.VarOutput;
-            CoursePageThree.prereqTxt = BL_PageContent.PrereqOutput;
-            CoursePageThree.creditsTxt = BL_PageContent.CreditOutput;
-
-            //navigate to course page one
             this.Frame.Navigate(typeof(CoursePageThree));
         }
 
