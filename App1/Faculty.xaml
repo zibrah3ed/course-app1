@@ -10,6 +10,6 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="10,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
         <HyperlinkButton x:Name="hypLnkPage2" Content="Page" HorizontalAlignment="Left" Margin="123,77,0,0" VerticalAlignment="Top" Click="hypLnkPage2_Click"/>
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="41,598,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="46,598,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD"/>
     </Grid>
 </Page>
