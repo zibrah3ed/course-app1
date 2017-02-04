@@ -34,6 +34,9 @@ namespace App1
             BL_PageContent.CreatedBy = "Created By: Tyson Funk";
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
 
+
+ 
+
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
@@ -69,5 +72,13 @@ namespace App1
         {
             this.Frame.Navigate(typeof(Faculty));
         }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+
     }
+
 }

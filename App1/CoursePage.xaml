@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="App1.CoursePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tfunk_Course_Project_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Header -->
+        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="10,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        
+        <!-- Body -->
+
+        <TextBox x:Name="txtBoxCourseOne" HorizontalAlignment="center" Margin="0,160,0,0" TextWrapping="Wrap" Text="Course" VerticalAlignment="Top" Height="80" Width="315"/>
+        <TextBox x:Name="txtBoxPrereqOne" HorizontalAlignment="center" Margin="0,275,0,0" TextWrapping="Wrap" Text="Prerequisite" VerticalAlignment="Top" Height="80" Width="315"/>
+        <TextBox x:Name="txtBoxCreditsOne" HorizontalAlignment="center" Margin="0,395,0,0" TextWrapping="Wrap" Text="Credits" VerticalAlignment="Top" Height="30" Width="315"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,135,0,0" TextWrapping="Wrap" Text="Course Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="center" Margin="0,245,0,0" TextWrapping="Wrap" Text="Prerequisite" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="center" Margin="0,365,0,0" TextWrapping="Wrap" Text="Credit Hours" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="165,462,0,0" RenderTransformOrigin="-0.527,4.945" Width="315" Click="button_Click"/>
+        
+        <!-- Footer -->
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="46,598,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD"/>
+    </Grid>
+</Page>
