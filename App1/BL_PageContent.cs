@@ -33,9 +33,11 @@ namespace App1
                
         }
 
-        public static void course1()
+        public static void courseInfo(int selectedIndex)
         {
-            string[] names = new string[3] { "CIS4655C", "UWP1", "This course is Advanced Mobile Web Application Development" };
+            string[] names = new string[3] { "CIS4655C UWP1 This course is Advanced Mobile Web Application Development",
+                                             "CDA3315C UWP1 This course is Fundamentals of Enterprise Architecture.",
+                                             "CIS4836C UWP1 This course is web analytics." };
 
             // Clear variable
             VarOutput = string.Empty;
@@ -43,47 +45,14 @@ namespace App1
             PrereqOutput = string.Empty;
 
             // Call function to set preeqs and credits
-            CourseCredits(0);
-
+            CourseCredits(selectedIndex);
+            VarOutput = names[selectedIndex];
             // Iterate through string names and append content with a space
-            for (int i = 0; i < names.Length; i++)
-            {
-                VarOutput = VarOutput + names[i] + " ";
-            }
-        }
-
-        public static void course2()
-        {
-            string[] names = new string[3] { "CDA3315C", "UWP1", "This course is Fundamentals of Enterprise Architecture." };
-
-            // Clear variable
-            VarOutput = string.Empty;
-            CreditOutput = string.Empty;
-            PrereqOutput = string.Empty;
-            CourseCredits(1);
-
-            // Iterate through string names and append content with a space
-            for (int i = 0; i < names.Length; i++)
-            {
-                VarOutput = VarOutput + names[i] + " ";
-            }
-        }
-
-        public static void course3()
-        {
-            string[] names = new string[3] { "CIS4836C", "UWP1", "This course is web analytics." };
-
-            // Clear variable
-            VarOutput = string.Empty;
-            CreditOutput = string.Empty;
-            PrereqOutput = string.Empty;
-            CourseCredits(2);
-
-            // Iterate through string names and append content with a space
-            for (int i = 0; i < names.Length; i++)
-            {
-                VarOutput = VarOutput + names[i] + " ";
-            }
+            // Removed loop, does not serve a purpose, strings combined into one 
+            //for (int i = 0; i < names.Length; i++)
+            //{
+            //    VarOutput = VarOutput + names[i] + " ";
+            //}
         }
 
     }

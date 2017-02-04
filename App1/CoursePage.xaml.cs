@@ -26,6 +26,11 @@ namespace App1
         {
             this.InitializeComponent();
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
+            
+            // Populate class page information 
+            txtBoxCourseOne.Text = BL_PageContent.VarOutput;
+            txtBoxCreditsOne.Text = BL_PageContent.CreditOutput;
+            txtBoxPrereqOne.Text = BL_PageContent.PrereqOutput;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

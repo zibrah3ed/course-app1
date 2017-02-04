@@ -10,23 +10,19 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <HyperlinkButton x:Uid="hlkWebSite" Content="Go" HorizontalAlignment="Left" Margin="56,95,0,0" VerticalAlignment="Top" BorderThickness="1"/>
 
-        <TextBox x:Name="txtBoxRas" HorizontalAlignment="Left" Margin="56,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Foreground="#eaaa00" Background="#45462A" TextAlignment="Center"/>
-        <TextBox x:Name="txtBoxDisplay" TextAlignment="center" HorizontalAlignment="Left" Margin="56,305,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="266"/>
-        <TextBox x:Name="txtBoxInput1" HorizontalAlignment="Left" Margin="56,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxRas" HorizontalAlignment="Left" Margin="55,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Foreground="#eaaa00" Background="#45462A" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxDisplay" TextAlignment="center" HorizontalAlignment="Left" Margin="55,305,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="266"/>
+        <TextBox x:Name="txtBoxInput1" HorizontalAlignment="Left" Margin="55,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <TextBox x:Name="txtBoxInput2" HorizontalAlignment="Left" Margin="254,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <Button x:Name="btnSubmit" Content="Calculate" HorizontalAlignment="Left" Margin="118,255,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.031,0.188" Width="139" Click="btnSubmit_Click"/>
 
         <!-- Page Selection Buttons -->
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="44,390,0,0" TextWrapping="Wrap" Text="Course Listing :" VerticalAlignment="Top"/>
-
-        <Button x:Name="btnCourse1" Content="Course 1" HorizontalAlignment="Left" Margin="45,430,0,0" VerticalAlignment="Top" Click="btnCourse1_Click"/>
-        <Button x:Name="btnCourse2" Content="Course 2" HorizontalAlignment="Left" Margin="45,467,0,0" VerticalAlignment="Top" Click="btnCourse2_Click"/>
-        <Button x:Name="btnCourse3" Content="Course 3" HorizontalAlignment="Left" Margin="45,504,0,0" VerticalAlignment="Top" Click="btnCourse3_Click"/>
-        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Left" Margin="45,580,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="55,390,0,0" TextWrapping="Wrap" Text="Course Listing :" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Left" Margin="55,580,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
 
 
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="45,675,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" IsReadOnly="True"/>
-        <ListBox x:Name="listBoxCourses" HorizontalAlignment="Left" Height="100" Margin="270,389,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="listBox_SelectionChanged"/>
+        <ListBox x:Name="listBoxCourses" HorizontalAlignment="Left" Height="108" Margin="55,420,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="listBox_SelectionChanged"/>
 
 
     </Grid>

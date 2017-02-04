@@ -58,24 +58,6 @@ namespace App1
             txtBoxDisplay.Text = Convert.ToString(Var1);
         }
 
-
-        private void btnCourse1_Click(object sender, RoutedEventArgs e)
-        {
-            //navigate to course page one
-            this.Frame.Navigate(typeof(CoursePageOne));
-        }
-
-
-        private void btnCourse2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(CoursePageTwo));
-        }
-
-        private void btnCourse3_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(CoursePageThree));
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Faculty));
@@ -83,7 +65,11 @@ namespace App1
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var selectedIndex = listBoxCourses.SelectedIndex;
 
+            BL_PageContent.courseInfo(selectedIndex);
+            Frame.Navigate(typeof(CoursePage));
+                
         }
 
 
