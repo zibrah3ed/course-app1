@@ -33,16 +33,24 @@ namespace App1
         public MainPage()
         {
             this.InitializeComponent();
+
+            // Main Text Box at header
             txtBoxRas.Text = "Rasmussen College";
+            
+            // Proof of style change with csharp is possible
             txtBoxRas.FontSize = 14;
+            
+            // Set Footer owner
             BL_PageContent.CreatedBy = "Created By: Tyson Funk";
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
+
 
             // Populate Listbox with classes.
             _courses.Add("Class One");
             _courses.Add("Class Two");
             _courses.Add("Class Three");
 
+            // Add courses list as item source
             listBoxCourses.ItemsSource = _courses;
 
         }
