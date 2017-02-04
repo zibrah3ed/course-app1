@@ -25,7 +25,11 @@ namespace App1
     
     public sealed partial class MainPage : Page
     {
-       
+
+        // Create List storing class choices for list box
+        List<string> _courses = new List<string>(); // <-- Add this
+
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -34,8 +38,12 @@ namespace App1
             BL_PageContent.CreatedBy = "Created By: Tyson Funk";
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
 
+            // Populate Listbox with classes.
+            _courses.Add("Class One");
+            _courses.Add("Class Two");
+            _courses.Add("Class Three");
 
- 
+            listBoxCourses.ItemsSource = _courses;
 
         }
 
