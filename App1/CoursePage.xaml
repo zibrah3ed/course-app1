@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!-- Header -->
-        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="10,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
         
         <!-- Body -->
 
