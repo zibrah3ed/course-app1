@@ -34,5 +34,10 @@ namespace App1
         {
             this.Frame.Navigate(typeof(Faculty));
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
     }
 }

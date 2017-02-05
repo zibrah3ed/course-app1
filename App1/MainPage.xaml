@@ -25,13 +25,13 @@
 
         <!-- Course Page Selection Buttons -->
         <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,390,0,0" TextWrapping="Wrap" Text="Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Height="108" Margin="0,420,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="listBox_SelectionChanged"/>
+        <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="AntiqueWhite" Height="108" Margin="0,420,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="listBox_SelectionChanged"/>
 
         <!-- Faculty Page Navigation button -->
         <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Center" Margin="0,580,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
 
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="left" Margin="0,675,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" BorderBrush="#FFFDFDFD" IsReadOnly="True" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="left" Margin="15,675,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" BorderBrush="#FFFDFDFD" IsReadOnly="True" FontSize="10"/>
         
 
     </Grid>

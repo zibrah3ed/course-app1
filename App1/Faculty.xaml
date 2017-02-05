@@ -8,8 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="10,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
-        <HyperlinkButton x:Name="hypLnkPage2" Content="Page" HorizontalAlignment="Left" Margin="123,77,0,0" VerticalAlignment="Top" Click="hypLnkPage2_Click"/>
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="46,598,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD"/>
+        <!-- Header -->
+        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        
+        <!-- Page Hyperlink-->
+        <HyperlinkButton x:Name="hypLnkPage2" Content="Page" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Click="hypLnkPage2_Click"/>
+        
+        <!-- Main page navigation -->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" RenderTransformOrigin="-0.527,4.945" Width="315" Click="button_Click"/>
+
+        <!-- Footer -->
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="10,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
     </Grid>
 </Page>
