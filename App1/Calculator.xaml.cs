@@ -15,30 +15,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace App1
+namespace Tfunk_Course_Project_App
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Faculty : Page
+    public sealed partial class Calculator : Page
     {
-        public Faculty()
+        public Calculator()
         {
             this.InitializeComponent();
-            BL_PageContent.CreatedBy = "Created By: Tyson Funk Images from: http://www.feelgrafix.com";
-
-            txtBoxFooter.Text = BL_PageContent.CreatedBy;
         }
-
-        private void hypLnkPage2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Faculty));
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(MainPage));
-        }
-
     }
 }

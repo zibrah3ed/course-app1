@@ -10,14 +10,29 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!-- Header -->
         <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
-        
+
         <!-- Page Hyperlink-->
         <HyperlinkButton x:Name="hypLnkPage2" Content="Page" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Click="hypLnkPage2_Click"/>
-        
+
         <!-- Main page navigation -->
-        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" RenderTransformOrigin="-0.527,4.945" Width="315" Click="button_Click"/>
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" Width="315" Click="button_Click"/>
+
+        <!-- Facutly Bios-->
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Width="100" Margin="50,180,0,0" VerticalAlignment="Top" Source="https://i.imgsafe.org/6b015e7813.jpg"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="170,180,0,0" TextWrapping="Wrap" Text="John V. Instructor is the Department Head. He has been a professor for 150 Years." VerticalAlignment="Top" Height="86" Width="320"/>
+
+        <Image x:Name="image1_Copy" HorizontalAlignment="Left" Height="100" Margin="50,290,0,0" VerticalAlignment="Top" Width="100" Source="https://i.imgsafe.org/6aff694030.jpg"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="170,290,0,0" TextWrapping="Wrap" Text="Dr. Bill Bullman is the Department's Senior Professor.  " VerticalAlignment="Top" Height="86" Width="335"/>
+
+        <Image x:Name="image2_Copy" HorizontalAlignment="Left" Height="100" Margin="50,400,0,0" VerticalAlignment="Top" Width="100" Source="https://i.imgsafe.org/6afc91600c.jpg"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="170,400,0,0" TextWrapping="Wrap" Text="Herbert Basic is an Associate Professor." VerticalAlignment="Top" Height="86" Width="335"/>
+
+        <Image x:Name="image3_Copy" HorizontalAlignment="Left" Height="100" Margin="50,510,0,0" VerticalAlignment="Top" Width="100" Source="https://i.imgsafe.org/6b01d31bd2.gif"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="170,510,0,0" TextWrapping="Wrap" Text="Harold Shortstack is a Graduate Assistant and is new to the department." VerticalAlignment="Top" Height="86" Width="335"/>
+
 
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400" BorderBrush="#FFFDFDFD" FontSize="10"/>
+
     </Grid>
 </Page>
