@@ -23,10 +23,16 @@ namespace App1
         public static void CourseCredits(int accessCode)
         {
             
-            string[] prereqArray = new string[3] { "Fundamentals of Mobile Web Applications Development","None","None" };
+            string[] prereqArray = new string[14] { "none",
+                                                    "none","none", "none",
+                                                    "CIS 3801C Fundamentals of Mobile Web Applications Development",
+                                                    "none", "none", "none",
+                                                    "none", "none", "none", "none",
+                                                    "CTS 3302C Fundamentals of Cloud Computing",
+                                                    "Technology Bachelor's student in final term" };
 
             //Credit Array
-            string[] creditArray = new string[3] { "4", "4", "4" };
+            string[] creditArray = new string[14] { "4", "4", "4", "4", "4", "4", "3", "4", "4", "4", "4", "4","4", "3" };
 
             CreditOutput = creditArray[accessCode];
             PrereqOutput = prereqArray[accessCode];
@@ -35,9 +41,21 @@ namespace App1
 
         public static void courseInfo(int selectedIndex)
         {
-            string[] names = new string[3] { "CIS4655C UWP1 This course is Advanced Mobile Web Application Development",
-                                             "CDA3315C UWP1 This course is Fundamentals of Enterprise Architecture.",
-                                             "CIS4836C UWP1 This course is web analytics." };
+            string[] names = new string[14] {    "CDA 3315C UWP1 Fundamentals of Enterprise Architecture",
+                                                "MAN 3504 UWP1 Operations Management",
+                                                "CDA 3428C UWP1 Fundamentals of Distributed Application Architecture",
+                                                "CIS 3801C UWP1 Fundamentals of Mobile Web Application Development",
+                                                "CIS 4655C UWP1 Advanced Mobile Web Application Development",
+                                                "GEB 3422 UWP1 Business Project Management",
+                                                "CTS 4557 UWP1 Emerging Trends in Technology",
+                                                "CIS 3917C UWP1 Fundamentals of Distributed Database Management",
+                                                "CTS 3265C UWP1 Introduction to Business Intelligence",
+                                                "CIS 4793C UWP1 Database Implementation Strategies for Programmers",
+                                                "CIS 4836C UWP1 Web Analytics",
+                                                "CTS 3302C UWP1 Fundamentals of Cloud Computing",
+                                                "CTS 4623C UWP1 Advanced Cloud Computing Technologies",
+                                                "CIS 4910C UWP1 Computer Science Capstone"
+                                            };
 
             // Clear variable
             VarOutput = string.Empty;

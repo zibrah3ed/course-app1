@@ -49,6 +49,17 @@ namespace App1
             _courses.Add("Class One");
             _courses.Add("Class Two");
             _courses.Add("Class Three");
+            _courses.Add("Class Four");
+            _courses.Add("Class Five");
+            _courses.Add("Class Six");
+            _courses.Add("Class Seven");
+            _courses.Add("Class Eight");
+            _courses.Add("Class Nine");
+            _courses.Add("Class Ten");
+            _courses.Add("Class Eleven");
+            _courses.Add("Class Twelve");
+            _courses.Add("Class Thirteen");
+            _courses.Add("Class Fourteen");
 
             // Add courses list as item source
             listBoxCourses.ItemsSource = _courses;

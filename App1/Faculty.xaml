@@ -18,6 +18,6 @@
         <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" RenderTransformOrigin="-0.527,4.945" Width="315" Click="button_Click"/>
 
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="10,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
     </Grid>
 </Page>
