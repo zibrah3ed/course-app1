@@ -25,7 +25,6 @@ namespace App1
         public Faculty()
         {
             this.InitializeComponent();
-            BL_PageContent.CreatedBy = "Created By: Tyson Funk Images from: http://www.feelgrafix.com";
 
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
         }

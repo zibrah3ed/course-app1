@@ -8,6 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Header -->
+        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        <!-- Calculator Buttons and Text -->
+        <TextBox x:Name="txtBoxDisplay" TextAlignment="center" HorizontalAlignment="Center" Margin="0,305,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="266"/>
+        <TextBox x:Name="txtBoxInput1" HorizontalAlignment="center" Margin="-200,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxInput2" HorizontalAlignment="center" Margin="200,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="btnSubmit" Content="Calculate" HorizontalAlignment="Center" Margin="254,375,247,0" VerticalAlignment="Top" RenderTransformOrigin="-0.031,0.188" Width="139" Click="btnSubmit_Click"/>
+
+        <!-- Main page navigation -->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" Width="315" Click="button_Click"/>
+
+        <!-- Footer -->
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400" BorderBrush="#FFFDFDFD" FontSize="10"/>
 
     </Grid>
 </Page>

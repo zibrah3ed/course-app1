@@ -16,23 +16,22 @@
 
         <!-- Rasmussen Textbox-->
         <TextBox x:Name="txtBoxRas" HorizontalAlignment="Center" Margin="0,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Foreground="#eaaa00" Background="#45462A" TextAlignment="Center"/>
-        
-        <!-- Calculator Buttons and Text -->
-        <TextBox x:Name="txtBoxDisplay" TextAlignment="center" HorizontalAlignment="Center" Margin="0,305,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="266"/>
-        <TextBox x:Name="txtBoxInput1" HorizontalAlignment="center" Margin="-200,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtBoxInput2" HorizontalAlignment="center" Margin="200,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Button x:Name="btnSubmit" Content="Calculate" HorizontalAlignment="Center" Margin="0,255,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.031,0.188" Width="139" Click="btnSubmit_Click"/>
+
 
         <!-- Course Page Selection Buttons -->
-        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,390,0,0" TextWrapping="Wrap" Text="Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="AntiqueWhite" Height="108" Margin="0,420,0,0" VerticalAlignment="Top" Width="270" SelectionChanged="listBox_SelectionChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,300,0,0" TextWrapping="Wrap" Text="Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="WhiteSmoke" Height="307" Margin="185,330,185,0" VerticalAlignment="Top" Width="270" SelectionChanged="listBox_SelectionChanged"/>
+
+        <!-- Calculator -->
+        <Button x:Name="calcButton" Content="Calculator" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="125" Click="calcButton_Click" />
 
         <!-- Faculty Page Navigation button -->
-        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Center" Margin="0,580,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
+        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="125" Click="button_Click"/>
 
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="left" Margin="15,675,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" BorderBrush="#FFFDFDFD" IsReadOnly="True" FontSize="10"/>
-        
+
+
 
     </Grid>
 </Page>

@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Tfunk_Course_Project_App
+namespace App1
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -25,6 +25,23 @@ namespace Tfunk_Course_Project_App
         public Calculator()
         {
             this.InitializeComponent();
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            ProcessCalc();
+        }
+
+        private void ProcessCalc()
+        {
+            Int32 Var1 = Convert.ToInt32(txtBoxInput1.Text) + Convert.ToInt32(txtBoxInput2.Text);
+            txtBoxDisplay.Text = Convert.ToString(Var1);
         }
     }
 }

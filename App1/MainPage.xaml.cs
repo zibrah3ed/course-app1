@@ -65,17 +65,6 @@ namespace App1
 
         }
 
-        private void btnSubmit_Click(object sender, RoutedEventArgs e)
-        {
-            ProcessCalc();
-        }
-
-        private void ProcessCalc()
-        {
-            Int32 Var1 = Convert.ToInt32(txtBoxInput1.Text) + Convert.ToInt32(txtBoxInput2.Text);
-            txtBoxDisplay.Text = Convert.ToString(Var1);
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Faculty));
@@ -90,7 +79,10 @@ namespace App1
                 
         }
 
-
+        private void calcButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Calculator));
+        }
     }
 
 }
