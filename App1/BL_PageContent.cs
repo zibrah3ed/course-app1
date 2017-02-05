@@ -55,7 +55,7 @@ namespace App1
                                                 "CTS 3302C UWP1 Fundamentals of Cloud Computing",
                                                 "CTS 4623C UWP1 Advanced Cloud Computing Technologies",
                                                 "CIS 4910C UWP1 Computer Science Capstone"
-                                            };
+                                            }; 
 
             // Clear variable
             VarOutput = string.Empty;

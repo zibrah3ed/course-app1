@@ -44,22 +44,21 @@ namespace App1
             BL_PageContent.CreatedBy = "Created By: Tyson Funk";
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
 
-
             // Populate Listbox with classes.
-            _courses.Add("Class One");
-            _courses.Add("Class Two");
-            _courses.Add("Class Three");
-            _courses.Add("Class Four");
-            _courses.Add("Class Five");
-            _courses.Add("Class Six");
-            _courses.Add("Class Seven");
-            _courses.Add("Class Eight");
-            _courses.Add("Class Nine");
-            _courses.Add("Class Ten");
-            _courses.Add("Class Eleven");
-            _courses.Add("Class Twelve");
-            _courses.Add("Class Thirteen");
-            _courses.Add("Class Fourteen");
+            _courses.Add("CDA 3315C");
+            _courses.Add("MAN 3504");
+            _courses.Add("CDA 3428C");
+            _courses.Add("CIS 3801C");
+            _courses.Add("CIS 4655C");
+            _courses.Add("GEB 3422");
+            _courses.Add("CTS 4557");
+            _courses.Add("CIS 3917C");
+            _courses.Add("CTS 3265C");
+            _courses.Add("CIS 4793C");
+            _courses.Add("CIS 4836C");
+            _courses.Add("CTS 3302C");
+            _courses.Add("CTS 4623C");
+            _courses.Add("CIS 4910C");
 
             // Add courses list as item source
             listBoxCourses.ItemsSource = _courses;
