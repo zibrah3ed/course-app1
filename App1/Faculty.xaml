@@ -32,7 +32,7 @@
 
 
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,15,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="auto" BorderBrush="#FFFDFDFD" FontSize="10"/>
 
     </Grid>
 </Page>
