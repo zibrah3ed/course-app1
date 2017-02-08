@@ -19,7 +19,7 @@
 
 
         <!-- Course Page Selection Buttons -->
-        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,300,0,0" TextWrapping="Wrap" Text="Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,300,0,0" TextWrapping="Wrap" Text="Computer Science Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="#E6E4D5" Height="325" Margin="15,330,15,0" VerticalAlignment="Top"  MinWidth="100" Width="auto" SelectionChanged="listBox_SelectionChanged"/>
 
         <!-- Calculator -->
