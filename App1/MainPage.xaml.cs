@@ -39,7 +39,7 @@ namespace TysonFunkApp
             
             // Proof of style change with csharp is possible
             txtBoxRas.FontSize = 14;
-            
+
             // Set Footer owner
             BL_PageContent.CreatedBy = "Created By: Tyson Funk";
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
