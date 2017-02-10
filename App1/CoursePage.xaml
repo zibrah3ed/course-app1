@@ -10,18 +10,22 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!-- Header -->
         <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
-        
+
         <!-- Body -->
 
         <TextBox x:Name="txtBoxCourseOne" HorizontalAlignment="center" Margin="0,160,0,0" TextWrapping="Wrap" Text="Course" VerticalAlignment="Top" Height="80" Width="315"/>
         <TextBox x:Name="txtBoxPrereqOne" HorizontalAlignment="center" Margin="0,275,0,0" TextWrapping="Wrap" Text="Prerequisite" VerticalAlignment="Top" Height="80" Width="315"/>
-        <TextBox x:Name="txtBoxCreditsOne" HorizontalAlignment="center" Margin="0,395,0,0" TextWrapping="Wrap" Text="Credits" VerticalAlignment="Top" Height="30" Width="315"/>
+        <TextBox x:Name="txtBoxCreditsOne" HorizontalAlignment="center" Margin="0,395,0,0" TextWrapping="Wrap" Text="Credits" VerticalAlignment="Top" Height="30" Width="150" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,135,0,0" TextWrapping="Wrap" Text="Course Name" VerticalAlignment="Top" FontWeight="SemiBold"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="center" Margin="0,245,0,0" TextWrapping="Wrap" Text="Prerequisite" VerticalAlignment="Top" FontWeight="SemiBold"/>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="center" Margin="0,365,0,0" TextWrapping="Wrap" Text="Credit Hours" VerticalAlignment="Top" FontWeight="SemiBold"/>
-        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,462,0,0" RenderTransformOrigin="-0.527,4.945" Width="315" Click="button_Click"/>
-        
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="center" Margin="0,366,0,0" TextWrapping="Wrap" Text="Credit Hours" VerticalAlignment="Top" FontWeight="SemiBold"/>
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,521,0,0" Width="315" Click="button_Click"/>
+
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+
+        <!-- Course ID-->
+        <TextBox x:Name="txtBoxCourseID" HorizontalAlignment="center" Margin="0,462,0,0" TextWrapping="Wrap" Text="Credits" VerticalAlignment="Top" Height="30" Width="150" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlockCourseID" HorizontalAlignment="center" Margin="0,433,0,0" TextWrapping="Wrap" Text="Course ID" VerticalAlignment="Top" FontWeight="SemiBold"/>
     </Grid>
 </Page>

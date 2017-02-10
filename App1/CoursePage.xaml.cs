@@ -31,11 +31,13 @@ namespace TysonFunkApp
             txtBoxCourseOne.Text = BL_PageContent.VarOutput;
             txtBoxCreditsOne.Text = BL_PageContent.CreditOutput;
             txtBoxPrereqOne.Text = BL_PageContent.PrereqOutput;
+            txtBoxCourseID.Text = BL_PageContent.CourseID;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
         }
+
     }
 }

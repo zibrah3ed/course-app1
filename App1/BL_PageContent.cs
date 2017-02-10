@@ -19,6 +19,7 @@ namespace TysonFunkApp
         // Output for credits and prereqs Public
         public static string CreditOutput { get; set; }
         public static string PrereqOutput { get; set; }
+        public static string CourseID { get; set; }
 
         public static void CourseCredits(int accessCode)
         {
@@ -33,9 +34,25 @@ namespace TysonFunkApp
 
             //Credit Array
             string[] creditArray = new string[14] { "4", "4", "4", "4", "4", "4", "3", "4", "4", "4", "4", "4","4", "3" };
+            // Course ID Array
+            string[] courseIDArray = new string[14] {"CDA 3315C",
+                                                    "MAN 3504",
+                                                    "CDA 3428C",
+                                                    "CIS 3801C",
+                                                    "CIS 4655C",
+                                                    "GEB 3422",
+                                                    "CTS 4557",
+                                                    "CIS 3917C",
+                                                    "CTS 3265C",
+                                                    "CIS 4793C",
+                                                    "CIS 4836C",
+                                                    "CTS 3302C",
+                                                    "CTS 4623C",
+                                                    "CIS 4910C" };
 
             CreditOutput = creditArray[accessCode];
             PrereqOutput = prereqArray[accessCode];
+            CourseID = courseIDArray[accessCode];
                
         }
 
@@ -61,6 +78,7 @@ namespace TysonFunkApp
             VarOutput = string.Empty;
             CreditOutput = string.Empty;
             PrereqOutput = string.Empty;
+            CourseID = string.Empty;
 
             // Call function to set preeqs and credits
             CourseCredits(selectedIndex);

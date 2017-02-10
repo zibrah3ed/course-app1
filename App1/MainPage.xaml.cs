@@ -45,20 +45,20 @@ namespace TysonFunkApp
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
 
             // Populate Listbox with classes.
-            _courses.Add("CDA 3315C");
-            _courses.Add("MAN 3504");
-            _courses.Add("CDA 3428C");
-            _courses.Add("CIS 3801C");
-            _courses.Add("CIS 4655C");
-            _courses.Add("GEB 3422");
-            _courses.Add("CTS 4557");
-            _courses.Add("CIS 3917C");
-            _courses.Add("CTS 3265C");
-            _courses.Add("CIS 4793C");
-            _courses.Add("CIS 4836C");
-            _courses.Add("CTS 3302C");
-            _courses.Add("CTS 4623C");
-            _courses.Add("CIS 4910C");
+            _courses.Add("Fundamentals of Enterprise Architecture");
+            _courses.Add("Operations Management");
+            _courses.Add("Fundamentals of Distributed Database Management");
+            _courses.Add("Fundamentals of Mobile Web Application Development");
+            _courses.Add("Advanced Mobile Web Application Development");
+            _courses.Add("Business Project Management");
+            _courses.Add("Emerging Trends in Technology");
+            _courses.Add("Fundamentals of Distributed Database Management");
+            _courses.Add("Introduction to Business Intelligence");
+            _courses.Add("Database Implementation Strategies for Programmers");
+            _courses.Add("Web Analytics");
+            _courses.Add("Fundamentals of Cloud Computing");
+            _courses.Add("Advanced Cloud Computing Technologies");
+            _courses.Add("Computer Science Capstone");
 
             // Add courses list as item source
             listBoxCourses.ItemsSource = _courses;
