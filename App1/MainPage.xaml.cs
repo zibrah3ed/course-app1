@@ -83,6 +83,11 @@ namespace TysonFunkApp
         {
             Frame.Navigate(typeof(Calculator));
         }
+
+        private void visionButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(VisionPage));
+        }
     }
 
 }

@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="TysonFunkApp.VisionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tfunk_Course_Project_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Header-->
+        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        <!-- Main Page Nav Button-->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="163,0,162,59" Width="315" Click="button_Click"/>
+
+        <!-- Main Content Vision and Program Objectives-->
+        <TextBox x:Name="visionBlock" HorizontalAlignment="Left" Margin="25,134,25,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="13"/>
+        <TextBox x:Name="objectiveBlock" HorizontalAlignment="Left" Margin="25,400,25,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="13"/>
+
+        <!-- Footer -->
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="0,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+
+        <!-- Static Heading for text blocks-->
+        <TextBlock x:Name="visionBlock_Copy" HorizontalAlignment="Left" Margin="25,102,0,0" TextWrapping="Wrap" Text="Program Vision" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="objectiveBlock_Copy" HorizontalAlignment="Left" Margin="25,370,0,0" TextWrapping="Wrap" Text="Program Objective" VerticalAlignment="Top" FontWeight="Bold"/>
+
+    </Grid>
+</Page>
