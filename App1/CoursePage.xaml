@@ -19,10 +19,12 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,135,0,0" TextWrapping="Wrap" Text="Course Name" VerticalAlignment="Top" FontWeight="SemiBold"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="center" Margin="0,245,0,0" TextWrapping="Wrap" Text="Prerequisite" VerticalAlignment="Top" FontWeight="SemiBold"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="center" Margin="0,366,0,0" TextWrapping="Wrap" Text="Credit Hours" VerticalAlignment="Top" FontWeight="SemiBold"/>
-        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,521,0,0" Width="315" Click="button_Click"/>
+        
+        <!-- Main Page Nav Button-->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="button_Click"/>
 
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
 
         <!-- Course ID-->
         <TextBox x:Name="txtBoxCourseID" HorizontalAlignment="center" Margin="0,462,0,0" TextWrapping="Wrap" Text="Credits" VerticalAlignment="Top" Height="30" Width="150" TextAlignment="Center"/>
