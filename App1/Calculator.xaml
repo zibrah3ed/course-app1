@@ -16,11 +16,11 @@
         <TextBox x:Name="txtBoxInput2" HorizontalAlignment="center" Margin="200,205,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
         <Button x:Name="btnSubmit" Content="Calculate" HorizontalAlignment="Center" Margin="14,375,15,0" VerticalAlignment="Top" Width="139" Click="btnSubmit_Click"/>
 
-        <!-- Main page navigation -->
-        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" Width="315" Click="button_Click"/>
+        <!-- Main Page Nav Button-->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="button_Click"/>
 
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
 
     </Grid>
 </Page>
