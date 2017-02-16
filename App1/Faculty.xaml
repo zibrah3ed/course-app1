@@ -14,9 +14,6 @@
         <!-- Page Hyperlink-->
         <!--<HyperlinkButton x:Name="hypLnkPage2" Content="Page" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Click="hypLnkPage2_Click"/>-->
 
-        <!-- Main page navigation -->
-        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,625,0,0" Width="315" Click="button_Click"/>
-
         <!-- Facutly Bios-->
         <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Width="100" Margin="50,180,0,0" VerticalAlignment="Top" Source="https://i.imgsafe.org/6b015e7813.jpg"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="170,180,0,0" TextWrapping="Wrap" Text="John V. Instructor is the Department Head. He has been a professor for 150 Years." VerticalAlignment="Top" Height="86" Width="320"/>
@@ -31,8 +28,11 @@
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="170,510,0,0" TextWrapping="Wrap" Text="Harold Shortstack is a Graduate Assistant and is new to the department." VerticalAlignment="Top" Height="86" Width="335"/>
 
 
+        <!-- Main Page Nav Button-->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="button_Click"/>
+
         <!-- Footer -->
-        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,675,15,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="auto" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
 
     </Grid>
 </Page>
