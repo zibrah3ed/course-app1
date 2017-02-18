@@ -26,6 +26,9 @@ namespace TysonFunkApp
         {
             this.InitializeComponent();
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
+            
+            // Create Page header Logo
+            pageHeader.Source = BL_PageContent.HeaderLogo;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

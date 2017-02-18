@@ -36,6 +36,11 @@ namespace TysonFunkApp
 
             // Main Text Box at header
             txtBoxRas.Text = "Rasmussen College";
+
+            // Create Page header Logo
+            // 
+            BL_PageContent.setLogo("http://www.rasmussen.edu/images/logo-internal.png");
+            pageHeader.Source = BL_PageContent.HeaderLogo;
             
             // Proof of style change with csharp is possible
             txtBoxRas.FontSize = 14;

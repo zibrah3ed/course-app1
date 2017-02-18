@@ -10,6 +10,8 @@ namespace TysonFunkApp
 {
     class BL_PageContent
     {
+        
+
         // Created By
         public static string CreatedBy { get; set; }
 
@@ -20,6 +22,15 @@ namespace TysonFunkApp
         public static string CreditOutput { get; set; }
         public static string PrereqOutput { get; set; }
         public static string CourseID { get; set; }
+        public static Windows.UI.Xaml.Media.Imaging.BitmapImage HeaderLogo { get; set; }
+
+        public static void setLogo(string address) {
+            Uri urlLogo = new Uri(address);
+            Windows.UI.Xaml.Media.Imaging.BitmapImage imgBitMap = new
+            Windows.UI.Xaml.Media.Imaging.BitmapImage();
+            imgBitMap.UriSource = urlLogo;
+            HeaderLogo = imgBitMap;
+        }
 
         public static void CourseCredits(int accessCode)
         {
@@ -58,20 +69,20 @@ namespace TysonFunkApp
 
         public static void courseInfo(int selectedIndex)
         {
-            string[] names = new string[14] {    "CDA 3315C UWP1 Fundamentals of Enterprise Architecture",
-                                                "MAN 3504 UWP1 Operations Management",
-                                                "CDA 3428C UWP1 Fundamentals of Distributed Application Architecture",
-                                                "CIS 3801C UWP1 Fundamentals of Mobile Web Application Development",
-                                                "CIS 4655C UWP1 Advanced Mobile Web Application Development",
-                                                "GEB 3422 UWP1 Business Project Management",
-                                                "CTS 4557 UWP1 Emerging Trends in Technology",
-                                                "CIS 3917C UWP1 Fundamentals of Distributed Database Management",
-                                                "CTS 3265C UWP1 Introduction to Business Intelligence",
-                                                "CIS 4793C UWP1 Database Implementation Strategies for Programmers",
-                                                "CIS 4836C UWP1 Web Analytics",
-                                                "CTS 3302C UWP1 Fundamentals of Cloud Computing",
-                                                "CTS 4623C UWP1 Advanced Cloud Computing Technologies",
-                                                "CIS 4910C UWP1 Computer Science Capstone"
+            string[] names = new string[14] {   "Fundamentals of Enterprise Architecture",
+                                                "Operations Management",
+                                                "Fundamentals of Distributed Application Architecture",
+                                                "Fundamentals of Mobile Web Application Development",
+                                                "Advanced Mobile Web Application Development",
+                                                "Business Project Management",
+                                                "Emerging Trends in Technology",
+                                                "Fundamentals of Distributed Database Management",
+                                                "Introduction to Business Intelligence",
+                                                "Database Implementation Strategies for Programmers",
+                                                "Web Analytics",
+                                                "Fundamentals of Cloud Computing",
+                                                "Advanced Cloud Computing Technologies",
+                                                "Computer Science Capstone"
                                             }; 
 
             // Clear variable

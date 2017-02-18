@@ -32,6 +32,9 @@ namespace TysonFunkApp
             txtBoxCreditsOne.Text = BL_PageContent.CreditOutput;
             txtBoxPrereqOne.Text = BL_PageContent.PrereqOutput;
             txtBoxCourseID.Text = BL_PageContent.CourseID;
+
+            // Create Page header Logo
+            pageHeader.Source = BL_PageContent.HeaderLogo;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!-- Header -->
-        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
 
         <!-- Page Hyperlink-->
         <!--<HyperlinkButton x:Name="hypLnkPage2" Content="Page" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Click="hypLnkPage2_Click"/>-->

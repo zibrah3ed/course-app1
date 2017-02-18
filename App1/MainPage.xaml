@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!-- Header -->
-        <Image x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
 
         <!-- Link to Rasmussen college homepage-->
         <HyperlinkButton x:Uid="hlkWebSite" Content="Go" HorizontalAlignment="Center" Margin="310,675,309,0" VerticalAlignment="Top" BorderThickness="1"/>
@@ -27,6 +27,7 @@
 
         <!-- Faculty Page Navigation button -->
         <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="175" Click="button_Click"/>
+        
         <!-- Vision Navigation Button-->
         <Button x:Name="visionButton" Content="Vision / Objective" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="175" Click="visionButton_Click"/>
 
