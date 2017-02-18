@@ -25,10 +25,15 @@ namespace TysonFunkApp
         public static Windows.UI.Xaml.Media.Imaging.BitmapImage HeaderLogo { get; set; }
 
         public static void setLogo(string address) {
+            
+            // Create new uri with URL passed to function
             Uri urlLogo = new Uri(address);
+            // New bitmap object
             Windows.UI.Xaml.Media.Imaging.BitmapImage imgBitMap = new
             Windows.UI.Xaml.Media.Imaging.BitmapImage();
+            // Set objects Urisource 
             imgBitMap.UriSource = urlLogo;
+            // Set public variable HeaderLogo for access 
             HeaderLogo = imgBitMap;
         }
 

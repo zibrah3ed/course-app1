@@ -38,7 +38,8 @@ namespace TysonFunkApp
             txtBoxRas.Text = "Rasmussen College";
 
             // Create Page header Logo
-            // 
+            // Only once on initial page load, logos for other pages set at navigation. 
+            // Function need only be called once.
             BL_PageContent.setLogo("http://www.rasmussen.edu/images/logo-internal.png");
             pageHeader.Source = BL_PageContent.HeaderLogo;
             
