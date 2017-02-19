@@ -37,6 +37,21 @@ namespace TysonFunkApp
             HeaderLogo = imgBitMap;
         }
 
+        // Second try at object creation function
+        public static Windows.UI.Xaml.Media.Imaging.BitmapImage setLogo2(string address) {
+            
+            // Create new uri with URL passed to function
+            Uri urlLogo = new Uri(address);
+            
+            // New bitmap object
+            Windows.UI.Xaml.Media.Imaging.BitmapImage imgBitMap = new
+            Windows.UI.Xaml.Media.Imaging.BitmapImage();
+            
+            // Set objects Urisource 
+            imgBitMap.UriSource = urlLogo;
+            return imgBitMap;
+        }
+
         public static void CourseCredits(int accessCode)
         {
             
@@ -90,7 +105,7 @@ namespace TysonFunkApp
                                                 "Computer Science Capstone"
                                             }; 
 
-            // Clear variable
+            // Clear variables
             VarOutput = string.Empty;
             CreditOutput = string.Empty;
             PrereqOutput = string.Empty;
@@ -99,6 +114,7 @@ namespace TysonFunkApp
             // Call function to set preeqs and credits
             CourseCredits(selectedIndex);
             VarOutput = names[selectedIndex];
+            
             // Iterate through string names and append content with a space
             // Removed loop, does not serve a purpose, strings combined into one 
             //for (int i = 0; i < names.Length; i++)

@@ -26,8 +26,15 @@ namespace TysonFunkApp
         {
             this.InitializeComponent();
 
+            // Set footer text
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
 
+            // Set Image
+            image1.Source = BL_PageContent.setLogo2("https://i.imgsafe.org/6b015e7813.jpg");
+            image2.Source = BL_PageContent.setLogo2("https://i.imgsafe.org/6aff694030.jpg");
+            image3.Source = BL_PageContent.setLogo2("https://i.imgsafe.org/6afc91600c.jpg");
+            image4.Source = BL_PageContent.setLogo2("https://i.imgsafe.org/6b01d31bd2.gif");
+            
             // Create Page header Logo
             pageHeader.Source = BL_PageContent.HeaderLogo;
         }

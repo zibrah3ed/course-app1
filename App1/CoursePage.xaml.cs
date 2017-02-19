@@ -33,7 +33,7 @@ namespace TysonFunkApp
             txtBoxPrereqOne.Text = BL_PageContent.PrereqOutput;
             txtBoxCourseID.Text = BL_PageContent.CourseID;
 
-            // Create Page header Logo
+            // Set Page header Logo
             pageHeader.Source = BL_PageContent.HeaderLogo;
         }
 
