@@ -14,6 +14,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+
+using System.Net.Http.Headers;
+
+
 
 namespace TysonFunkApp
 {
@@ -102,5 +107,7 @@ namespace TysonFunkApp
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        public static MobileServiceClient MobileService = new MobileServiceClient("http://tfunk-webapp.azurewebsites.net");
     }
 }

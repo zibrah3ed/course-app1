@@ -14,6 +14,11 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
+using Microsoft.WindowsAzure.MobileServices;
+using System.Threading.Tasks;
+using Windows.Storage;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -87,13 +92,16 @@ namespace TysonFunkApp
 
         private void calcButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Calculator));
+            Frame.Navigate(typeof(todoitem));
         }
 
         private void visionButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(VisionPage));
         }
+
+        
     }
+    
 
 }
