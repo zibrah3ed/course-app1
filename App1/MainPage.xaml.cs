@@ -92,7 +92,7 @@ namespace TysonFunkApp
 
         private void calcButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(todoitem));
+            Frame.Navigate(typeof(Calculator));
         }
 
         private void visionButton_Click(object sender, RoutedEventArgs e)
@@ -100,7 +100,10 @@ namespace TysonFunkApp
             Frame.Navigate(typeof(VisionPage));
         }
 
-        
+        private void todoButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(todoitem));
+        }
     }
     
 

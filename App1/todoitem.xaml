@@ -25,7 +25,7 @@
 
         <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="62,190,0,0" VerticalAlignment="Top" Click="btnRefresh_Click_1"/>
 
-        <ListView Name="ListItems" Margin="62,348,155,63">
+        <ListView Name="ListItems" Margin="62,253,155,115">
 
             <ListView.ItemTemplate>
 

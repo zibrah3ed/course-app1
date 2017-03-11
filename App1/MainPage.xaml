@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-       
+
         <!-- Header -->
         <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
 
@@ -20,17 +20,20 @@
 
 
         <!-- Course Page Selection Buttons -->
-        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="0,345,0,0" TextWrapping="Wrap" Text="Computer Science Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="#E6E4D5" Height="275" Margin="15,375,15,0" VerticalAlignment="Top"  MinWidth="100" Width="auto" SelectionChanged="listBox_SelectionChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="78,409,77,0" TextWrapping="Wrap" Text="Computer Science Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="#E6E4D5" Height="203" Margin="15,447,15,0" VerticalAlignment="Top"  MinWidth="100" Width="auto" SelectionChanged="listBox_SelectionChanged"/>
 
         <!-- Calculator -->
         <Button x:Name="calcButton" Content="Calculator" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="175" Click="calcButton_Click" />
 
         <!-- Faculty Page Navigation button -->
         <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="175" Click="button_Click"/>
-        
+
         <!-- Vision Navigation Button-->
         <Button x:Name="visionButton" Content="Vision / Objective" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="175" Click="visionButton_Click"/>
+
+        <!-- Todo Item Navigation Button-->
+        <Button x:Name="todoButton" Content="Todo List" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Width="175" Click="todoButton_Click"/>
 
 
         <!-- Footer -->
