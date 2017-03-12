@@ -25,22 +25,15 @@
 
         <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="62,190,0,0" VerticalAlignment="Top" Click="btnRefresh_Click_1"/>
 
-        <ListView Name="ListItems" Margin="62,253,155,115">
-
+        <!-- Listbox display database data -->
+        <ListView Name="ListItems" Margin="62,253,69,115" Background="Beige">
             <ListView.ItemTemplate>
-
                 <DataTemplate>
-
                     <StackPanel Orientation="Horizontal">
-
                         <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>
-
                     </StackPanel>
-
                 </DataTemplate>
-
             </ListView.ItemTemplate>
-
         </ListView>
 
     </Grid>
