@@ -33,7 +33,6 @@ namespace TysonFunkApp
             this.InitializeComponent();
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
             pageHeader.Source = BL_PageContent.HeaderLogo;
-
         }
 
         // Code from Project Appendix I
@@ -45,18 +44,14 @@ namespace TysonFunkApp
         public class Contact
         {
             public int ID { get; set; }
-
             public string NAME { get; set; }
-
             public string EMAILADDRESS { get; set; }
         }
 
         public class TodoItem
         {       
             public string Id { get; set; }
-
             public string Text { get; set; }
-
             public bool Complete { get; set; }
         }
 

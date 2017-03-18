@@ -116,6 +116,9 @@
     <Compile Include="todoitem.xaml.cs">
       <DependentUpon>todoitem.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserAuth.xaml.cs">
+      <DependentUpon>UserAuth.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VisionPage.xaml.cs">
       <DependentUpon>VisionPage.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="todoitem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserAuth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

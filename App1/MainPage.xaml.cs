@@ -19,6 +19,11 @@ using System.Threading.Tasks;
 using Windows.Storage;
 using System.Net.Http;
 using Newtonsoft.Json;
+using SQLite;
+using SQLite.Net;
+using SQLite.Net.Async;
+using Microsoft.WindowsAzure.MobileServices.Sync;
+//using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
