@@ -24,16 +24,19 @@
         <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="#E6E4D5" Height="203" Margin="15,447,15,0" VerticalAlignment="Top"  MinWidth="100" Width="auto" SelectionChanged="listBox_SelectionChanged"/>
 
         <!-- Calculator -->
-        <Button x:Name="calcButton" Content="Calculator" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="175" Click="calcButton_Click" />
+        <Button x:Name="calcButton" Content="Calculator" HorizontalAlignment="left" Margin="25,250,0,0" VerticalAlignment="Top" Width="175" Click="calcButton_Click" />
 
         <!-- Faculty Page Navigation button -->
-        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="175" Click="button_Click"/>
+        <Button x:Name="button" Content="Faculty Page" HorizontalAlignment="left" Margin="25,200,0,0" VerticalAlignment="Top" Width="175" Click="button_Click"/>
 
         <!-- Vision Navigation Button-->
-        <Button x:Name="visionButton" Content="Vision / Objective" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="175" Click="visionButton_Click"/>
+        <Button x:Name="visionButton" Content="Vision / Objective" HorizontalAlignment="left" Margin="25,300,0,0" VerticalAlignment="Top" Width="175" Click="visionButton_Click"/>
 
         <!-- Todo Item Navigation Button-->
-        <Button x:Name="todoButton" Content="Todo List" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Width="175" Click="todoButton_Click"/>
+        <Button x:Name="todoButton" Content="Todo List" HorizontalAlignment="left" Margin="25,350,0,0" VerticalAlignment="Top" Width="175" Click="todoButton_Click"/>
+
+        <!-- User Authentication Page Button-->
+        <Button x:Name="authButton" Content="User Authentication" HorizontalAlignment="right" Margin="0,200,25,0" VerticalAlignment="Top" Width="175" Click="authButton_Click"/>
 
 
         <!-- Footer -->

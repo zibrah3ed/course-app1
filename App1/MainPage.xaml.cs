@@ -109,6 +109,11 @@ namespace TysonFunkApp
         {
             Frame.Navigate(typeof(todoitem));
         }
+
+        private void authButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(UserAuth));
+        }
     }
     
 
