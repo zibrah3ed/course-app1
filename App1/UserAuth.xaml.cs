@@ -34,9 +34,13 @@ namespace TysonFunkApp
     /// </summary>
     public sealed partial class UserAuth : Page
     {
+        private IMobileServiceSyncTable<User_Cred> todoGetTable = App.MobileService.GetSyncTable<User_Cred>();
+
         public UserAuth()
         {
             this.InitializeComponent();
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
+            pageHeader.Source = BL_PageContent.HeaderLogo;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -55,7 +59,7 @@ namespace TysonFunkApp
             public string Password { get; set; }
         }
 
-        private IMobileServiceSyncTable<User_Cred> todoGetTable = App.MobileService.GetSyncTable<User_Cred>();
+        
 
         private async Task InitLocalStoreAsync()
         {

@@ -17,7 +17,11 @@ using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 
 using System.Net.Http.Headers;
-
+using SQLite;
+using SQLite.Net;
+using SQLite.Net.Async;
+using Microsoft.WindowsAzure.MobileServices.Sync;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 
 
 namespace TysonFunkApp
