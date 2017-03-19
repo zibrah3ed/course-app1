@@ -112,6 +112,6 @@ namespace TysonFunkApp
             deferral.Complete();
         }
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("http://tfunk-webapp.azurewebsites.net.fail");
+        public static MobileServiceClient MobileService = new MobileServiceClient("http://tfunk-webapp.azurewebsites.net");
     }
 }
