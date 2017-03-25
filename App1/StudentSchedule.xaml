@@ -8,6 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Main Page Nav Button-->
+        <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="button_Click"/>
+
+        <!-- Footer -->
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        
+        <!-- Header -->
+        <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
 
     </Grid>
 </Page>
