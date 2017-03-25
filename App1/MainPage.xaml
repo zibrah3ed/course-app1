@@ -38,6 +38,9 @@
         <!-- User Authentication Page Button-->
         <Button x:Name="authButton" Content="User Authentication" HorizontalAlignment="right" Margin="0,200,25,0" VerticalAlignment="Top" Width="175" Click="authButton_Click"/>
 
+        <!-- Student Schedule Page Button-->
+        <Button x:Name="schedule_Button" Content="Student Schedule" HorizontalAlignment="right" Margin="0,250,25,0" VerticalAlignment="Top" Width="175" Click="schedule_Button_Click"/>
+
 
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
