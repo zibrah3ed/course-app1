@@ -22,9 +22,13 @@ namespace TysonFunkApp
     /// </summary>
     public sealed partial class StudentSchedule : Page
     {
+        
+
         public StudentSchedule()
         {
             this.InitializeComponent();
+            pageHeader.Source = BL_PageContent.HeaderLogo;
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
