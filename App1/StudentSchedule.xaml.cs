@@ -29,11 +29,32 @@ namespace TysonFunkApp
             this.InitializeComponent();
             pageHeader.Source = BL_PageContent.HeaderLogo;
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
+            setStudentInfo();
+            
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        private void setStudentInfo()
+        {
+
+            // Catch Null exception error and set student info to default values.
+            if (BL_PageContent.authFirstName == null)
+                {
+                firstNameBox.Text = "First Name";
+                lastNameBox.Text = "Last Name";
+                studentIDBox.Text = "12345";
+            }
+            else
+            {
+                // If first test is passed user has been authenticated and values will not be null
+                firstNameBox.Text = BL_PageContent.authFirstName;
+                lastNameBox.Text = BL_PageContent.authLastName;
+                studentIDBox.Text = BL_PageContent.UserID;
+            }
         }
     }
 }

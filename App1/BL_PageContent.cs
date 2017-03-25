@@ -24,6 +24,13 @@ namespace TysonFunkApp
         public static string CourseID { get; set; }
         public static Windows.UI.Xaml.Media.Imaging.BitmapImage HeaderLogo { get; set; }
 
+        // Student Schedule Post Authentication User Names
+        public static string authFirstName { get; set; }
+        public static string authLastName { get; set; }
+        public static string UserID { get; set; }
+
+
+
         public static void setLogo(string address) {
             
             // Create new uri with URL passed to function

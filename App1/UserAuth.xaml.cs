@@ -57,6 +57,9 @@ namespace TysonFunkApp
             public string FullName { get; set; }
             public string UserID { get; set; }
             public string Password { get; set; }
+            /// Added values for student schedule page
+            public string firstName { get; set; }
+            public string lastName { get; set; }
         }
 
         
@@ -112,6 +115,12 @@ namespace TysonFunkApp
                 {
                     var dialog = new MessageDialog("You are Authenticated");
                     await dialog.ShowAsync();
+
+                    /// Navigate to Student Schedule after authentication and set student name properties -->
+                    BL_PageContent.authFirstName = items.ElementAt(0).firstName;
+                    BL_PageContent.authLastName = items.ElementAt(0).lastName;
+                    BL_PageContent.UserID = items.ElementAt(0).UserID;
+
                     Frame.Navigate(typeof(StudentSchedule));
 
                 }
@@ -136,7 +145,10 @@ namespace TysonFunkApp
                 {
                     FullName = "System Test",
                     UserID = txtBoxUserId.Text,
-                    Password = txtBoxPasswd.Text
+                    Password = txtBoxPasswd.Text,
+                    /// Added for student Schedule Fucntionality currently hardcoded for proof of concept
+                    firstName = "John",
+                    lastName = "Rasmussen"
                 };
                 await App.MobileService.GetTable<User_Cred>().InsertAsync(itemReg);
                 var dialog = new MessageDialog("Successful!");
