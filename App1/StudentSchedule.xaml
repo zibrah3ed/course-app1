@@ -13,9 +13,20 @@
 
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
-        
+
         <!-- Header -->
         <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
+
+        <!-- Student Name -->
+        <!-- first -->
+        <TextBox x:Name="firstNameBox" HorizontalAlignment="Left" Margin="150,160,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="firstNameBlock" HorizontalAlignment="Left" Margin="50,164,0,0" TextWrapping="Wrap" Text="First Name :" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <!-- Last -->
+        <TextBox x:Name="lastNameBox" HorizontalAlignment="Left" Margin="150,200,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="lastNameBlock" HorizontalAlignment="Left" Margin="50,204,0,0" TextWrapping="Wrap" Text="Last Name :" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <!-- Student ID-->
+        <TextBox x:Name="studentIDBox" HorizontalAlignment="Left" Margin="150,240,0,0" TextWrapping="Wrap" Text="Student ID #" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="studentIDBlock" HorizontalAlignment="Left" Margin="50,244,0,0" TextWrapping="Wrap" Text="Student ID :" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
 
     </Grid>
 </Page>

@@ -112,6 +112,7 @@ namespace TysonFunkApp
                 {
                     var dialog = new MessageDialog("You are Authenticated");
                     await dialog.ShowAsync();
+                    Frame.Navigate(typeof(StudentSchedule));
 
                 }
                 else
