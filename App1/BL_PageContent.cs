@@ -29,7 +29,8 @@ namespace TysonFunkApp
         public static string authLastName { get; set; }
         public static string UserID { get; set; }
 
-
+        // Class List Array
+        public static List<string> _classList = new List<string>();
 
         public static void setLogo(string address) {
             
@@ -130,5 +131,15 @@ namespace TysonFunkApp
             //}
         }
 
+        public static void classListInfo(int accessCode) {
+            // Empty list in case of repeated navigations appending to list
+            _classList.Clear();
+
+            for (int i = 0; i < 4; i++)
+            {
+                courseInfo(i);
+                _classList.Add(CourseID + "  " + VarOutput);
+            }
+        }
     }
 }

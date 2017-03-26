@@ -28,5 +28,12 @@
         <TextBox x:Name="studentIDBox" HorizontalAlignment="Left" Margin="150,240,0,0" TextWrapping="Wrap" Text="Student ID #" VerticalAlignment="Top" Width="200"/>
         <TextBlock x:Name="studentIDBlock" HorizontalAlignment="Left" Margin="50,244,0,0" TextWrapping="Wrap" Text="Student ID :" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
 
+        <!-- Link to Rasmussen college homepage-->
+        <HyperlinkButton x:Uid="hlkWebSite" Content="Go" HorizontalAlignment="Center" Margin="0,625,0,0" VerticalAlignment="Top" BorderThickness="1" Width="200"/>
+
+        <!-- Class List -->
+        <ListBox x:Name="classList" HorizontalAlignment="Stretch" Height="292" Margin="15,328,15,0" VerticalAlignment="Top" />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="stretch" Margin="15,298,15,0" TextWrapping="Wrap" Text="Class Schedule" VerticalAlignment="Top" Width="150" TextAlignment="Center" FontWeight="Bold"/>
+
     </Grid>
 </Page>

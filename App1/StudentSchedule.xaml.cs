@@ -29,8 +29,9 @@ namespace TysonFunkApp
             this.InitializeComponent();
             pageHeader.Source = BL_PageContent.HeaderLogo;
             txtBoxFooter.Text = BL_PageContent.CreatedBy;
+            // Call Student info function at page load
             setStudentInfo();
-            
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -54,7 +55,16 @@ namespace TysonFunkApp
                 firstNameBox.Text = BL_PageContent.authFirstName;
                 lastNameBox.Text = BL_PageContent.authLastName;
                 studentIDBox.Text = BL_PageContent.UserID;
+
+                // Set Classlist Item source to bl_pagecontent.
+                BL_PageContent.classListInfo(0);
+                classList.ItemsSource = BL_PageContent._classList;
             }
+
+            
         }
+
+        
+       
     }
 }

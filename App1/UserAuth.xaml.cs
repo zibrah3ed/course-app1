@@ -147,8 +147,8 @@ namespace TysonFunkApp
                     UserID = txtBoxUserId.Text,
                     Password = txtBoxPasswd.Text,
                     /// Added for student Schedule Fucntionality currently hardcoded for proof of concept
-                    firstName = "John",
-                    lastName = "Rasmussen"
+                    firstName = "Essie",
+                    lastName = "Funk"
                 };
                 await App.MobileService.GetTable<User_Cred>().InsertAsync(itemReg);
                 var dialog = new MessageDialog("Successful!");
