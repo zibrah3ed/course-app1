@@ -15,7 +15,6 @@
         <!-- Rasmussen Textbox-->
         <TextBox x:Name="txtBoxRas" HorizontalAlignment="Center" Margin="0,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Foreground="#eaaa00" Background="#45462A" TextAlignment="Center"/>
 
-
         <!-- Course Page Selection Buttons -->
         <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="78,409,77,0" TextWrapping="Wrap" Text="Computer Science Course Listing" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <ListBox x:Name="listBoxCourses" HorizontalAlignment="center" Background="#E6E4D5" Height="203" Margin="15,447,15,0" VerticalAlignment="Top"  MinWidth="100" Width="auto" SelectionChanged="listBox_SelectionChanged"/>
@@ -37,7 +36,8 @@
 
         <!-- Student Schedule Page Button-->
         <Button x:Name="schedule_Button" Content="Student Schedule" HorizontalAlignment="right" Margin="0,250,25,0" VerticalAlignment="Top" Width="175" Click="schedule_Button_Click"/>
-
+        <!-- Lab Navigation Button-->
+        <Button x:Name="labButton" Content="Lab" HorizontalAlignment="right" Margin="0,300,25,0" VerticalAlignment="Top" Width="175" Click="labButton_Click"/>
 
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>

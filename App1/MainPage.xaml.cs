@@ -119,6 +119,11 @@ namespace TysonFunkApp
         {
             Frame.Navigate(typeof(StudentSchedule));
         }
+
+        private void labButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LabPage));
+        }
     }
     
 

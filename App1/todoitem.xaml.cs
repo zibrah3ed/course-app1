@@ -87,7 +87,7 @@ namespace TysonFunkApp
             {
                 client.BaseAddress = new
 
-                Uri("https://tfunk-webapp.azurewebsites.net");
+                Uri("https://tfunkwebapp.azurewebsites.net");
 
                 var json = client.GetStringAsync("/").Result;
 
