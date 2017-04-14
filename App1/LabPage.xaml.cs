@@ -25,7 +25,8 @@ namespace TysonFunkApp
         public LabPage()
         {
             this.InitializeComponent();
-            //pageHeader.Source = BL_PageContent.HeaderLogo;
+            pageHeader.Source = BL_PageContent.HeaderLogo;
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -42,12 +43,15 @@ namespace TysonFunkApp
 
             var Var2 = new Amazon.Auth.AccessControlPolicy.Policy();
             BL_PageContent.AWS_Name = Convert.ToString(Var2.Version);
-         
+                    
         }
-
+        
         private void lab2_button_Click(object sender, RoutedEventArgs e)
         {
+            lab2Textbox.Text = string.Empty;
             GetAWS();
+            lab2Textbox.Text = BL_PageContent.AWS_Name;
         }
+
     }
 }
