@@ -25,6 +25,13 @@ namespace TysonFunkApp
         public BookDB()
         {
             this.InitializeComponent();
+            pageHeader.Source = BL_PageContent.HeaderLogo;
+            txtBoxFooter.Text = BL_PageContent.CreatedBy;
+        }
+
+        private void pageNav_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }

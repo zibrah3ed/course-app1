@@ -38,10 +38,13 @@
         <Button x:Name="schedule_Button" Content="Student Schedule" HorizontalAlignment="right" Margin="0,250,25,0" VerticalAlignment="Top" Width="175" Click="schedule_Button_Click"/>
         <!-- Lab Navigation Button-->
         <Button x:Name="labButton" Content="Lab" HorizontalAlignment="right" Margin="0,300,25,0" VerticalAlignment="Top" Width="175" Click="labButton_Click"/>
+        
+        <!-- WinAppCloud Nav Button-->
+        <Button x:Name="winAppCP_button" Content="Cloud Course Project" HorizontalAlignment="right" Margin="0,350,25,0" VerticalAlignment="Top" Width="175" Click="winAppCP_button_Click"/>
 
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
-
+        
 
     </Grid>
 </Page>

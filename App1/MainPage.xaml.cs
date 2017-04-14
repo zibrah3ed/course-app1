@@ -124,6 +124,11 @@ namespace TysonFunkApp
         {
             Frame.Navigate(typeof(LabPage));
         }
+
+        private void winAppCP_button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BookDB));
+        }
     }
     
 
