@@ -25,6 +25,7 @@ namespace TysonFunkApp
         public LabPage()
         {
             this.InitializeComponent();
+            pageHeader.Source = BL_PageContent.HeaderLogo;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -32,5 +33,21 @@ namespace TysonFunkApp
             Frame.Navigate(typeof(MainPage));
         }
 
+        public static string AWS_UserAgentName { get; set; }
+
+        public static void GetAWS()
+        {
+            var client = new Amazon.APIGateway.AmazonAPIGatewayConfig();
+            AWS_UserAgentName = Convert.ToString(client.UserAgent);
+
+            var Var2 = new Amazon.APIGateway.AmazonAPIGatewayConfig();
+            BL_PageContent.AWS_Name = Convert.ToString(Var2.UserAgent);
+
+        }
+
+        private void lab2_button_Click(object sender, RoutedEventArgs e)
+        {
+            GetAWS();
+        }
     }
 }

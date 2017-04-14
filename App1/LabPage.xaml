@@ -10,13 +10,14 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <!-- Header -->
-        <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
-        
+        <!--<Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340"/>
+        -->
         <!-- Main Page Nav Button-->
         <Button x:Name="button" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="button_Click"/>
 
         <!-- Footer -->
         <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <Button x:Name="lab2_button" Content="Get AWS API Button" HorizontalAlignment="Left" Height="40" Margin="85,373,0,0" VerticalAlignment="Top" Width="175" Click="lab2_button_Click"/>
 
     </Grid>
 </Page>

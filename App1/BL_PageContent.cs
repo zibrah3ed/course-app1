@@ -28,9 +28,12 @@ namespace TysonFunkApp
         public static string authFirstName { get; set; }
         public static string authLastName { get; set; }
         public static string UserID { get; set; }
-
+        
         // Class List Array
         public static List<string> _classList = new List<string>();
+
+        // Cloud Class Variables
+        public static string AWS_Name { get; set; }
 
         public static void setLogo(string address) {
             
