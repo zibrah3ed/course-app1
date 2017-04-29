@@ -17,21 +17,47 @@
 
         <!-- Listbox display database data -->
         <ListView x:Name="ListBooks" Margin="25,0,25,115" Background="Beige" Height="225" VerticalAlignment="Bottom">
-
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding AUTHOR_LAST}" 
-                           Margin="20,0,20,8"
-                           FontSize="16" 
-                           FontStyle="Italic" 
-                           FontWeight="SemiBold"
-                           Foreground="DarkBlue" />
-                        <TextBlock Text="{Binding AUTHOR_FIRST}" 
-                           Margin="20,0,20,8"
-                           FontSize="12"
-                           Foreground="DarkGray" 
-                           Opacity="0.8" />
+                        <TextBlock Grid.Column="0" Margin="0,0,15,0">
+                            <Run Text="Title" FontSize="18" FontWeight="Bold"/>
+                            <LineBreak />
+                            <Run Text="{Binding Book_Title}"  
+                                FontSize="16" 
+                                FontStyle="Italic" 
+                                FontWeight="SemiBold"
+                                Foreground="DarkBlue" />
+                        </TextBlock>
+                        <TextBlock Grid.Column="1" Margin="15,0,15,0">
+                            <Run Text="Last Name" FontSize="18" FontWeight="Bold"/>
+                            <LineBreak />
+                            <Run Text="{Binding Author_Last}"  
+                                FontSize="14" 
+                                FontStyle="Italic" 
+                                FontWeight="SemiBold"
+                                Foreground="Black" />
+                        </TextBlock>
+                        <TextBlock Grid.Column="2" Margin="15,0,15,0">
+                            <Run Text="First Name" FontSize="18" FontWeight="Bold"/>
+                            <LineBreak />
+                            <Run Text="{Binding Author_First}"  
+                                FontSize="14" 
+                                FontStyle="Italic" 
+                                FontWeight="SemiBold"
+                                Foreground="Black" />
+                        </TextBlock>
+                        <TextBlock Grid.Column="2" Margin="15,0,15,0">
+                            <Run Text="Middle Name" FontSize="18" FontWeight="Bold"/>
+                            <LineBreak />
+                            <Run Text="{Binding Author_Middle}"  
+                                FontSize="14" 
+                                FontStyle="Italic" 
+                                FontWeight="SemiBold"
+                                Foreground="Black" />
+                        </TextBlock>
+                        
+                        
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -44,7 +70,7 @@
         <Button x:Name="delete_Book" Content="Remove Book" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,278,46,0" Width="125"/>
 
         <!-- Search Box  Last name is a placeholder replace with listbox to select column for searching-->
-        <Button x:Name="search_Book" Content="Search" VerticalAlignment="Top" Margin="44,203,0,0" Width="125"/>
+        <Button x:Name="search_Book" Content="Search" VerticalAlignment="Top" Margin="44,203,0,0" Width="125" Click="search_Book_Click"/>
         <TextBox x:Name="search_textBox" Height="32" Margin="169,203,46,0" TextWrapping="Wrap" Text="Enter Author Last Name" VerticalAlignment="Top"/>
 
         <!-- Search results Header-->

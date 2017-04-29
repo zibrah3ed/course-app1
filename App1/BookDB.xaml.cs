@@ -48,7 +48,7 @@ namespace TysonFunkApp
 
         private void button_listall_Click(object sender, RoutedEventArgs e)
         {
-            RefreshDatabase();
+           RefreshDatabase();
         }
         public class childrens_book_db
         {
@@ -81,7 +81,42 @@ namespace TysonFunkApp
 
                 items = await bookTable
 
-                .Where(childrens_book_db => childrens_book_db.Complete == false)
+                .Where(childrens_book_db => childrens_book_db.deleted == false)
+
+                .ToCollectionAsync();
+            }
+            catch (MobileServiceInvalidOperationException e)
+            {
+                exception = e;
+            }
+            if (exception != null)
+            {
+                await new MessageDialog(exception.Message, "Error loading items").ShowAsync();
+            }
+            else
+            {
+                ListBooks.ItemsSource = items;
+             
+            }
+        }
+
+        private void search_Book_Click(object sender, RoutedEventArgs e)
+        {
+            searchDatabase(search_textBox.Text.ToString());
+        }
+
+        public async Task searchDatabase(string searchTerm)
+        {
+            MobileServiceInvalidOperationException exception = null;
+
+            try
+            {
+                // This code refreshes the entries in the list view by querying the TodoItems table.
+                // The query excludes completed TodoItems
+
+                items = await bookTable
+
+                .Where(childrens_book_db => childrens_book_db.Author_Last.ToUpper() == searchTerm.ToUpper())
 
                 .ToCollectionAsync();
             }
@@ -97,12 +132,8 @@ namespace TysonFunkApp
             {
                 ListBooks.ItemsSource = items;
 
-                //this.btnRefresh.IsEnabled = true;
             }
         }
-
-       
-
     }
 }
 
