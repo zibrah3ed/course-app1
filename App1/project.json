@@ -5,7 +5,8 @@
     "Microsoft.Azure.Mobile.Client.SQLiteStore": "2.1.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "Newtonsoft.Json": "8.0.3",
-    "SQLite.Net.Async-PCL": "3.1.1"
+    "SQLite.Net.Async-PCL": "3.1.1",
+    "WindowsAzure.Storage": "8.1.1"
   },
   "frameworks": {
     "uap10.0": {}

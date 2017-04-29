@@ -16,19 +16,30 @@
         <Button x:Name="pageNav" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="pageNav_Click"/>
 
         <!-- Listbox display database data -->
-        <ListView Name="ListItems" Margin="25,0,25,115" Background="Beige" Height="225" VerticalAlignment="Bottom">
+        <ListView x:Name="ListBooks" Margin="25,0,25,115" Background="Beige" Height="225" VerticalAlignment="Bottom">
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                       <!-- <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>
-                    -->
-                        </StackPanel>
+                        <TextBlock Text="{Binding AUTHOR_LAST}" 
+                           Margin="20,0,20,8"
+                           FontSize="16" 
+                           FontStyle="Italic" 
+                           FontWeight="SemiBold"
+                           Foreground="DarkBlue" />
+                        <TextBlock Text="{Binding AUTHOR_FIRST}" 
+                           Margin="20,0,20,8"
+                           FontSize="12"
+                           Foreground="DarkGray" 
+                           Opacity="0.8" />
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
+
         </ListView>
 
         <!-- CRUD Buttons -->
-        <Button x:Name="add_Book" Content="Add Book" VerticalAlignment="Top" Margin="44,278,0,0" Width="125"/>
+        <Button x:Name="add_Book" Content="Add Book" VerticalAlignment="Top" Margin="44,278,0,0" Width="125" Click="add_Book_Click"/>
         <Button x:Name="update_Book" Content="Update Book" VerticalAlignment="Top" Margin="44,318,0,0" Width="125"/>
         <Button x:Name="delete_Book" Content="Remove Book" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,278,46,0" Width="125"/>
 
@@ -38,6 +49,8 @@
 
         <!-- Search results Header-->
         <TextBlock x:Name="search_results" Margin="35,382,35,345" TextWrapping="Wrap" Text="Book Listing" TextAlignment="center" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="button_listall" Content="List All Books" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,318,46,0" Width="125" Click="button_listall_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
 
 

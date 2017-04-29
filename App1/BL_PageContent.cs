@@ -1,8 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
+using Windows.UI.Popups;
+using Windows.Storage;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 
 
@@ -31,6 +46,10 @@ namespace TysonFunkApp
         
         // Class List Array
         public static List<string> _classList = new List<string>();
+        // DB Variable
+       // public static List<string> bookSource = new List<string>();
+
+    
 
         // Cloud Class Variables
         public static string AWS_Name { get; set; }

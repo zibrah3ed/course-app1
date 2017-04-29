@@ -96,6 +96,9 @@
     <PRIResource Include="Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add2DB.xaml.cs">
+      <DependentUpon>Add2DB.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Add2DB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BookDB.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

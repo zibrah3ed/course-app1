@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="TysonFunkApp.Add2DB"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TysonFunkApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Header -->
+        <Image x:Name="pageHeader" HorizontalAlignment="Center" Height="100" Margin="0,16,0,0" VerticalAlignment="Top" Width="340" Source=""/>
+        <!-- Footer -->
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="15,0,0,16" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="bottom" Width="271" BorderBrush="#FFFDFDFD" FontSize="10"/>
+        <!-- Main Page Nav Button-->
+        <Button x:Name="pageNav" Content="Return to Main Page" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0,0,0,59" Width="315" Click="pageNav_Click"/>
+
+        <!-- Listbox display database data -->
+
+        
+        <!-- Search Box  First name is a placeholder replace with listbox to select column for searching-->
+        <TextBox x:Name="txtBox_auth_first" Height="32" Margin="25,185,25,0" TextWrapping="Wrap" Text="Author First Name" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_auth_mid" Height="32" Margin="25,225,25,0" TextWrapping="Wrap" Text="Author Middle Name" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_auth_last" Height="32" Margin="25,265,25,0" TextWrapping="Wrap" Text="Author Last Name" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_title" Height="32" Margin="25,305,25,0" TextWrapping="Wrap" Text="Book Title" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_publisher" Height="32" Margin="25,345,25,0" TextWrapping="Wrap" Text="Publisher" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_isbn" Height="32" Margin="25,385,25,0" TextWrapping="Wrap" Text="ISBN #" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_gps" Height="32" Margin="25,425,25,0" TextWrapping="Wrap" Text="GPS Data" VerticalAlignment="Top"/>
+
+        <!-- Search results Header-->
+        <TextBlock x:Name="search_results" Margin="0,131,0,589" TextWrapping="Wrap" Text="Add A Book" TextAlignment="center" FontSize="20" FontWeight="Bold"/>
+
+        <!-- CRUD Buttons -->
+        <Button x:Name="add_Book" Content="Add Book" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="25,500,0,0" Width="150" Click="add_Book_Click"/>
+
+        <Button x:Name="previous_page" Content="Book Listing" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="25,560,0,0" Width="150" Click="previous_page_Click"/>
+
+
+
+
+
+    </Grid>
+</Page>
